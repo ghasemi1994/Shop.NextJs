@@ -1,32 +1,50 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import Image from "next/image";
+import './Swipper.module.css'
 
 export default function Swipper() {
   return (
     <Swiper
+      className="swiper-container-pointer-events"
+      modules={[Autoplay, Pagination]}
+      autoplay={{
+        delay: 4000,
+        disableOnInteraction: false,
+      }}
       pagination={{
         clickable: true,
       }}
-      modules={[Pagination]}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
       centeredSlides={true}
-      spaceBetween={30}
+      spaceBetween={0}
+      loop={true}
+      dir="rtl"
     >
       <SwiperSlide>
-        <img src="/images/slider/slider1.jpg" alt="تصوير" />
+        <Image
+          src="/images/slider/slider1.jpg"
+          alt="Landscape picture"
+          layout="fill"
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="/images/slider/slider2.jpg" alt="تصوير" />
+      <Image
+          src="/images/slider/slider2.jpg"
+          alt="Landscape picture"
+          layout="fill"
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="/images/slider/slider3.jpg" alt="تصوير" />
+      <Image
+          src="/images/slider/slider3.jpg"
+          alt="Landscape picture"
+          layout="fill"
+        />
       </SwiperSlide>
     </Swiper>
   );
