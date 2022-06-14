@@ -1,9 +1,13 @@
 import React from "react";
-import headerStyles from "../../styles/Header.module.css";
+import styles from "../../styles/Header.module.css";
+import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <div>       
-    </div>
+    <header className="header d-flex flex-column">
+
+      <Navbar />
+      
+    </header>
   );
 }
