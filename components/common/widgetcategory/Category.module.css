@@ -1,0 +1,10 @@
+.widget-main-category {
+    width: 28% !important;
+}
+
+@media (min-width: 1024px) {
+    .widget-main-category {
+        width: 20% !important;
+    }
+}
+

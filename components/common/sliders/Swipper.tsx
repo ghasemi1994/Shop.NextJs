@@ -46,6 +46,13 @@ export default function Swipper() {
           layout="fill"
         />
       </SwiperSlide>
+      <SwiperSlide>
+      <Image
+          src="/images/slider/slider4.jpg"
+          alt="Landscape picture"
+          layout="fill"
+        />
+      </SwiperSlide>
     </Swiper>
   );
 }

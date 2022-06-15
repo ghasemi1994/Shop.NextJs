@@ -172,7 +172,7 @@ img {
 .header .menu > ul > li > a {
   position: relative;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.25;
   border: none;
@@ -205,7 +205,7 @@ img {
 .header .menu > ul > li .menu-subs > ul > li > a {
   display: inline-block;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.25;
   padding: 0.75rem 0;
@@ -232,7 +232,7 @@ img {
 .header .menu > ul > li .menu-subs.menu-mega > .list-item > ul > li > a {
   display: inline-block;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.25;
   padding: 0.5rem 0;

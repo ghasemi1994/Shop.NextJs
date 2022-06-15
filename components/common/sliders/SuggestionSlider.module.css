@@ -1,0 +1,7 @@
+
+@media (min-width: 1024px) {
+    .breakpoint .widget_amazing_mini_carousel {
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+}
