@@ -1,10 +1,16 @@
 @import url(primary-iran-yekan.css);
 @import url(roots.css);
-
 html {
     scroll-behavior: smooth;
     max-width: 100vw;
     background-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0
 }
 
 html,
@@ -12,27 +18,27 @@ body {
     direction: rtl;
     height: 100%;
     width: 100%;
+    font-size: 13px;
 }
+
 body {
     background-color: var(--color-neutral-000);
+    min-height: 100vh
 }
+
 *,
 body {
     font-family: var(--font-family);
 }
+
 body {
     min-height: 100vh;
-}
-* {
-    box-sizing: border-box;
-    outline: none;
-    margin: 0;
-    padding: 0;
 }
 
 .w-full {
     width: 100%;
 }
+
 .h-full {
     height: 100%;
 }
@@ -49,8 +55,13 @@ body {
     height: 100%;
 }
 
+input {
+    background-color: transparent
+}
+
 a {
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent
 }
 
 #__next {
@@ -59,13 +70,13 @@ a {
     position: relative;
 }
 
-span > img {
+span>img {
     position: relative !important;
     height: 100% !important;
     width: 100% !important;
 }
 
-.makeup-card > span {
+.makeup-card>span {
     position: relative !important;
 }
 
@@ -77,6 +88,7 @@ span > img {
 .hp-categories-icons span img {
     width: 100% !important;
 }
+
 @media (min-width: 1024px) {
     .mb-9-lg {
         margin-bottom: calc(9 * var(--spacing-base));
@@ -90,6 +102,7 @@ span > img {
         line-height: 2.17;
     }
 }
+
 .text-body2-strong {
     font-size: 1.1rem;
     font-weight: 700;
@@ -103,9 +116,11 @@ span > img {
 .color-900 {
     color: var(--color-neutral-900);
 }
+
 .mt-2 {
     margin-top: calc(2 * var(--spacing-base));
 }
+
 .color-600 {
     color: var(--color-neutral-600);
 }
@@ -115,6 +130,7 @@ span > img {
     font-weight: 500;
     line-height: 2.1;
 }
+
 @media (min-width: 1024px) {
     .breakpoint .text-h3 {
         font-size: 2.1rem;
@@ -122,49 +138,64 @@ span > img {
         line-height: 2.1;
     }
 }
+
 .w-20 {
     width: 20%;
 }
+
 .grow-1 {
     flex-grow: 1;
 }
+
 .mx-auto {
     margin-right: auto;
     margin-left: auto;
 }
+
 .py-3 {
     padding-top: calc(3 * var(--spacing-base));
     padding-bottom: calc(3 * var(--spacing-base));
 }
+
 @media (min-width: 1024px) {
     .breakpoint .px-4-lg {
         padding-right: calc(4 * var(--spacing-base));
         padding-left: calc(4 * var(--spacing-base));
     }
 }
+
 .px-1 {
     padding-right: calc(1 * var(--spacing-base));
     padding-left: calc(1 * var(--spacing-base));
 }
+
 .color-700 {
     color: var(--color-neutral-700);
 }
+
 .color-300 {
     color: var(--color-neutral-300);
 }
+
 .mr-auto {
     margin-right: auto;
 }
+
 .line-through {
     text-decoration: line-through;
 }
+
 .as-end {
     align-self: flex-end;
 }
+
 .pl-5 {
     padding-left: calc(5 * var(--spacing-base));
 }
+
+
 /*****************************************************************************/
+
 .swiper {
     width: 100%;
     height: 400px;

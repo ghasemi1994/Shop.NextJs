@@ -1,9 +1,12 @@
 import React from "react";
 import Image from "next/image";
-export default function PupolarBrands() {
+interface IProps {
+  className?: string;
+}
+export default function PupolarBrands(props: IProps) {
   return (
-    <div>
-      <div className="w-full bg-white py-3 d-flex flex-column align-items-center mt-4">
+ 
+      <div className="w-full bg-white py-3 d-flex flex-column align-items-center p-4">
         {/* <div className="text-center mb-9-lg mb-6">
           <h3 className="text-h3 color-900">برند های محبوب</h3>
         </div> */}
@@ -78,7 +81,6 @@ export default function PupolarBrands() {
           </div>
         </div>
       </div>
-    </div>
     
   );
 }

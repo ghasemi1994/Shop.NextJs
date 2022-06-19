@@ -17,18 +17,15 @@ const Home: NextPage = () => {
 
       <Swipper />
 
-      <div className="container">
-        <PupolarBrands />
-        <hr />
-        <SuggestionSlider />
-        <hr />
-        <Category />
-        <hr />
-      </div>
+      <PupolarBrands className="mb-3" />
 
-      <div className="container">
-        <div className="row mt-4">
-          <div className="col-lg-4 col-md-6 col-sm-12">
+      <SuggestionSlider />
+
+      <Category />
+
+      <div className="w-full d-flex flex-wrap align-items-start flex-row p-4">
+       
+          <div className="col-lg-4 col-md-6 col-sm-12 p-2">
             <div className="card makeup-card">
               <Image
                 src="/images/cards/card2.webp"
@@ -48,8 +45,8 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            <div className="card makeup-card">
+          <div className="col-lg-4 col-md-6 col-sm-12 p-2">
+            <div className="card makeup-card ">
               <Image
                 src="/images/cards/card3.webp"
                 className="card-img-top"
@@ -69,8 +66,8 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            <div className="card makeup-card">
+          <div className="col-lg-4 col-md-6 col-sm-12 p-2">
+            <div className="card makeup-card ">
               <Image
                 src="/images/cards/card1.webp"
                 className="card-img-top"
@@ -89,7 +86,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-        </div>
+      
       </div>
     </>
   );
