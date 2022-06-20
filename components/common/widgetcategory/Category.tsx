@@ -7,7 +7,7 @@ interface IProps {
 }
 export default function Category(props: IProps) {
   return (
-    <div className="w-full bg-white py-3 d-flex flex-column align-items-center mt-4">
+    <div className="w-full bg-white py-3 d-flex flex-column align-items-center">
       <style jsx>{`
         .hp-categories-icons {
           width: 20%;
@@ -25,7 +25,7 @@ export default function Category(props: IProps) {
               style={{ width: "170px", height: "170px" }}
             >
               <Image
-                src="/images/categories/category1.png"
+                src="/images/categories/category6.png"
                 alt="no-image"
                 layout="fill"
                 width={170}
@@ -45,7 +45,7 @@ export default function Category(props: IProps) {
               style={{ width: "170px", height: "170px" }}
             >
               <Image
-                src="/images/categories/category1.png"
+                src="/images/categories/category2.png"
                 alt="no-image"
                 layout="fill"
                 width={170}
@@ -53,7 +53,7 @@ export default function Category(props: IProps) {
               />
             </div>
             <p className="text-body2-strong color-900 mt-2 text-center">
-              زیبایی و سلامت
+             لوازم برقی
             </p>
           </a>
         </span>
@@ -65,7 +65,7 @@ export default function Category(props: IProps) {
               style={{ width: "170px", height: "170px" }}
             >
               <Image
-                src="/images/categories/category1.png"
+                src="/images/categories/category3.png"
                 alt="no-image"
                 layout="fill"
                 width={170}
@@ -73,7 +73,7 @@ export default function Category(props: IProps) {
               />
             </div>
             <p className="text-body2-strong color-900 mt-2 text-center">
-              زیبایی و سلامت
+             عطر و ادکلن
             </p>
           </a>
         </span>
@@ -85,7 +85,7 @@ export default function Category(props: IProps) {
               style={{ width: "170px", height: "170px" }}
             >
               <Image
-                src="/images/categories/category1.png"
+                src="/images/categories/category4.jpg"
                 alt="no-image"
                 layout="fill"
                 width={170}
@@ -93,7 +93,7 @@ export default function Category(props: IProps) {
               />
             </div>
             <p className="text-body2-strong color-900 mt-2 text-center">
-              زیبایی و سلامت
+              اصلاح صورت 
             </p>
           </a>
         </span>
@@ -105,7 +105,7 @@ export default function Category(props: IProps) {
               style={{ width: "170px", height: "170px" }}
             >
               <Image
-                src="/images/categories/category1.png"
+                src="/images/categories/category5.jpg"
                 alt="no-image"
                 layout="fill"
                 width={170}
@@ -116,27 +116,7 @@ export default function Category(props: IProps) {
               زیبایی و سلامت
             </p>
           </a>
-        </span>
-
-        <span className="hp-categories-icons">
-          <a href="#" className="d-flex flex-column align-items-center">
-            <div
-              className="d-flex align-items-center"
-              style={{ width: "170px", height: "170px" }}
-            >
-              <Image
-                src="/images/categories/category1.png"
-                alt="no-image"
-                layout="fill"
-                width={170}
-                height={170}
-              />
-            </div>
-            <p className="text-body2-strong color-900 mt-2 text-center">
-              زیبایی و سلامت
-            </p>
-          </a>
-        </span>
+        </span>     
 
       </div>
     </div>

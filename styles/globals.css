@@ -10,7 +10,7 @@ html {
     box-sizing: border-box;
     outline: none;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 html,
@@ -23,7 +23,7 @@ body {
 
 body {
     background-color: var(--color-neutral-000);
-    min-height: 100vh
+    min-height: 100vh;
 }
 
 *,
@@ -56,12 +56,12 @@ body {
 }
 
 input {
-    background-color: transparent
+    background-color: transparent;
 }
 
 a {
     text-decoration: none;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
 }
 
 #__next {
@@ -70,13 +70,17 @@ a {
     position: relative;
 }
 
-span>img {
+span > img {
     position: relative !important;
     height: 100% !important;
     width: 100% !important;
 }
 
-.makeup-card>span {
+.category-sugges span {
+    /*for all Image next.js*/
+    position: relative !important;
+}
+.makeup-card > span {
     position: relative !important;
 }
 
@@ -193,7 +197,70 @@ span>img {
     padding-left: calc(5 * var(--spacing-base));
 }
 
-
+.top-0 {
+    top: 0;
+}
+.left-0 {
+    left: 0;
+}
+.z-4 {
+    z-index: 4;
+}
+.shadow-1-bottom {
+    box-shadow: 0 1px 0 rgb(0 0 0 / 14%), 0 2px 0 rgb(0 0 0 / 5%);
+}
+.bg-000 {
+    background-color: var(--color-neutral-000);
+}
+.shrink-0 {
+    flex-shrink: 0;
+}
+@media (min-width: 1024px) {
+    .breakpoint .text-body-2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 2.17;
+    }
+}
+@media (min-width: 1024px) {
+    .breakpoint .px-4-lg {
+        padding-right: calc(4 * var(--spacing-base));
+        padding-left: calc(4 * var(--spacing-base));
+    }
+}
+@media (min-width: 1336px) {
+    .breakpoint .px-0-2xl {
+        padding-right: calc(0 * var(--spacing-base));
+        padding-left: calc(0 * var(--spacing-base));
+    }
+}
+.container-2xl-w {
+    width: 100%;
+    max-width: 1336px;
+}
+.pb-3 {
+    padding-bottom: calc(3 * var(--spacing-base));
+}
+.px-5 {
+    padding-right: calc(5 * var(--spacing-base));
+    padding-left: calc(5 * var(--spacing-base));
+}
+@media (min-width: 1024px) {
+    .breakpoint .radius-large-lg {
+        border-radius: var(--large-radius);
+    }
+}
+@media (min-width: 1024px) {
+    .breakpoint .pb-0-lg {
+        padding-bottom: calc(0 * var(--spacing-base));
+    }
+}
+@media (min-width: 1024px) {
+    .breakpoint .px-0-lg {
+        padding-right: calc(0 * var(--spacing-base));
+        padding-left: calc(0 * var(--spacing-base));
+    }
+}
 /*****************************************************************************/
 
 .swiper {

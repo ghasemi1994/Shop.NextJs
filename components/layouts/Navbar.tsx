@@ -5,7 +5,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 
 export default function Navbar() {
   return (
-    <div className="container">
+    <div className="">
       <section className="wrapper">
         <div className="header-item-right">
           <h5>بیا تو بیوتی</h5>
