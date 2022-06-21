@@ -8,7 +8,7 @@ export default function TopHeader() {
     >
       <div className="top-header-right">TopHeader Right</div>
       <div className="top-header-center">TopHeader Center</div>
-      <div className="top-header-left">TopHeader Left</div>
+      <div className="top-header-left">TopHeader Left</div>  
     </div>
   );
 }
