@@ -21,6 +21,7 @@ const Home: NextPage = () => {
       <div className="container-2xl-w mx-auto px-4-lg px-0-2xl">
         <Category />
         <CategorySuggestion />
+        <SuggestionSlider />
       </div>
 
       {/* <PupolarBrands className="mb-3" />

@@ -81,7 +81,6 @@ img {
 
 .brand {
   font-family: "Rubik", sans-serif;
-  font-size: 1.625rem;
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: -1px;
@@ -147,7 +146,6 @@ img {
           justify-content: flex-end;
 }
 .header-item-right .menu-icon {
-  font-size: 1.35rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,7 +169,6 @@ img {
 .header .menu > ul > li > a {
   position: relative;
   font-family: inherit;
-  font-size: 0.9.5rem;
   font-weight: 400;
   line-height: 2.17;
   border: none;
@@ -204,7 +201,6 @@ img {
 .header .menu > ul > li .menu-subs > ul > li > a {
   display: inline-block;
   font-family: inherit;
-  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.25;
   padding: 0.75rem 0;
@@ -231,7 +227,6 @@ img {
 .header .menu > ul > li .menu-subs.menu-mega > .list-item > ul > li > a {
   display: inline-block;
   font-family: inherit;
-  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.25;
   padding: 0.5rem 0;
@@ -260,7 +255,6 @@ img {
 }
 .header .menu > ul > li .menu-subs.menu-column-4 > .list-item .title {
   font-family: inherit;
-  font-size: 1rem;
   font-weight: 500;
   line-height: 1;
   padding: 0.75rem 0;
@@ -401,7 +395,6 @@ img {
   }
   .header .menu > ul > li > a i.ion {
     position: absolute;
-    font-size: 1.25rem;
     line-height: 3.125rem;
     top: 0;
     right: 0;
@@ -431,7 +424,6 @@ img {
   }
   .header .menu .menu-mobile-header .menu-mobile-arrow {
     display: none;
-    font-size: 1.25rem;
     line-height: 3.125rem;
     width: 3.125rem;
     height: 3.125rem;
@@ -445,14 +437,12 @@ img {
   }
   .header .menu .menu-mobile-header .menu-mobile-title {
     font-family: inherit;
-    font-size: 1rem;
     font-weight: 500;
     line-height: inherit;
     color: var(--color-black);
     text-transform: capitalize;
   }
   .header .menu .menu-mobile-header .menu-mobile-close {
-    font-size: 2.25rem;
     line-height: 3.125rem;
     cursor: pointer;
     width: 3.125rem;

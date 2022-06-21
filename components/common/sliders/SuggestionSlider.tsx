@@ -8,23 +8,19 @@ import styles from "./SuggestionSlider.module.css";
 
 export default function SuggestionSlider() {
   return (
-    <div className="w-100">
-      <div className="text-center mb-9-lg mb-6">
-        <h3 className="text-h3 color-900">پیشنهاد های ویژه</h3>
+    <div className="w-full bg-000 px-5 px-4-lg py-3 pt-4-lg pb-10-lg">
+      <div className="text-center py-3 py-4-lg">
+        <h2 className="text-h3 color-900">پیشنهاد های ویژه</h2>
       </div>
-      <div className={`d-flex flex-noerap py-3 position-relative`}>
+      <div className="d-flex">
         <Swiper
           loop={true}
           autoHeight={true}
           slidesPerView={7}
           spaceBetween={2}
           centeredSlides={true}
-          // pagination={{
-          //   clickable: true,
-          // }}
-          // modules={[Pagination]}
-          className="p-3"
-          style={{ background: "#FB9DAB" }}
+          className="p-4"
+          style={{background:"rgb(171, 221, 214)"}}
         >
           <SwiperSlide className="w-auto h-auto">
             <a
