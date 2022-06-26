@@ -6,6 +6,7 @@ import Category from "../components/common/widgetcategory/Category";
 import PupolarBrands from "../components/common/brands/PupolarBrands";
 import SuggestionSlider from "../components/common/sliders/SuggestionSlider";
 import CategorySuggestion from "../components/common/widgetcategory/CategorySuggestion";
+import BestProduct from "../components/common/sliders/best-product/BestProduct";
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
         <Category />
         <CategorySuggestion />
         <SuggestionSlider />
+        <BestProduct />
       </div>
 
       {/* <PupolarBrands className="mb-3" />
