@@ -24,12 +24,6 @@ const Home: NextPage = () => {
         <SuggestionSlider />
       </div>
 
-      {/* <PupolarBrands className="mb-3" />
-
-      <SuggestionSlider />
-
-      <Category /> */}
-
       <div className="w-full d-flex flex-wrap align-items-start flex-row p-4 d-none">
         <div className="col-lg-4 col-md-6 col-sm-12 p-2">
           <div className="card makeup-card">
