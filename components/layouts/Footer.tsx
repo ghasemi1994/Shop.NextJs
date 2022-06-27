@@ -13,7 +13,7 @@ export default function Footer() {
 
           <div className="mb-8 mt-4 mt-3-md mb-0-md d-flex ai-center flex-wrap flex-nowrap-lg text-body-2 color-700">
             <p className="shrink-0" data-cro-id="footer-phonenumber">
-              تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱
+              تلفن پشتیبانی ۰۰۰۰ - ۰۲۱
             </p>
             <div className="px-5 color-400 d-none d-block-md"> | </div>
             <p className="w-full mt-1 w-auto-md mt-0-md">
@@ -343,10 +343,32 @@ export default function Footer() {
               </p>
             </div>
             <div className="w-full w-auto-lg d-flex ai-center mt-4 mt-0-lg jc-center jc-end-lg"></div>
+            <div className="w-full w-auto-lg d-flex ai-center mt-4 mt-0-lg jc-center jc-end-lg">
+              <div className="pointer p-2 p-4-lg d-flex ai-center jc-center border-200 radius mr-2">
+                <div style={{ width: "75px", height: "75px" }}>
+                 Nemad1
+                </div>
+              </div>
+              <div className="pointer p-2 p-4-lg d-flex ai-center jc-center border-200 radius mr-2">
+                <div style={{ width: "75px", height: "75px" }}>
+                Nemad2
+                </div>
+              </div>
+              <a
+                className="pointer p-2 p-4-lg d-flex ai-center jc-center border-200 radius mr-2"
+                target=""
+                href="#"
+                dideo-checked="true"
+              >
+                <div style={{ width: "75px", height: "75px" }}>
+                Nemad3
+                </div>
+              </a>
+            </div>
           </div>
+
           <div className="d-flex text-caption color-500 text-center ai-center flex-column jc-between border-t py-8">
-            
-            (فروشگاه آنلاین بيوتی) 
+            (فروشگاه آنلاین بيوتی)
           </div>
         </div>
       </div>
