@@ -9,12 +9,12 @@ interface PropType {
 export default function Layout({ children }: PropType) {
   return (
     <>
-      <div className="h-100 d-flex flex-column bg-000 align-items-center">
+      <div className="h-100 d-flex flex-column bg-000 ai-center">
         <Header />
         <div
           className="grow-1 bg-000 d-flex flex-column w-100 align-items-center shrink-0"
           style={{
-            paddingTop: "105px",
+            paddingTop: "106px",
             paddingBottom: "0",
             paddingLeft: "0",
           }}

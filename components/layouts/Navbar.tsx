@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <section className="wrapper" style={{height:"55px"}}>
       <div className="header-item-right">
-        <h5 className="h3">بیا تو بیوتی</h5>
+        <h2 className="h2">بیا تو بیوتی</h2>
       </div>
       <div className="header-item-center">
         <div className="overlay"></div>

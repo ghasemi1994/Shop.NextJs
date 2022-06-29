@@ -1,15 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import styles from './CategorySuggestion.module.css';
+import styles from "./CategorySuggestion.module.css";
 
 export default function CategorySuggestion() {
   return (
-    <div className="w-full bg-000 px-5 px-4-lg py-3 pt-4-lg pb-10-lg ">
-      <div className="text-center py-3 py-4-lg">
-        <h2 className="text-h3 color-900">دسته ‌بندی‌های پیشنهادی</h2>
+    <div className="w-full d-flex flex-column jc-center align-items py-4 bg-000 mt-4 mt-6-lg">
+      <div className="d-flex jc-between jc-center-lg ai-center px-2 px-5-lg pos-relative">
+        <div className="d-flex jc-center ai-center mb-4">
+          <div className="d-flex ml-2 "></div>
+          <p className="text-h3 color-900">دسته بندی پيشنهادی</p>
+        </div>    
       </div>
       <div className="d-grid grid-cols-2 grid-cols-4-lg gap-4 gap-3-lg gap-4-xl mx-5 mx-0-lg">
-
         <a href="#" className="w-full d-block position-relative">
           <img
             style={{ borderRadius: "15px" }}
@@ -66,7 +68,6 @@ export default function CategorySuggestion() {
              
               /> */}
         </a>
-        
       </div>
     </div>
   );
