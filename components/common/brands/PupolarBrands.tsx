@@ -1,86 +1,153 @@
 import React from "react";
-import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import { FreeMode, Autoplay } from "swiper";
+
 interface IProps {
   className?: string;
 }
 export default function PupolarBrands(props: IProps) {
   return (
- 
-      <div className="w-full bg-white py-3 d-flex flex-column align-items-center p-4">
-        {/* <div className="text-center mb-9-lg mb-6">
-          <h3 className="text-h3 color-900">برند های محبوب</h3>
-        </div> */}
-        <div className="d-flex flex-row flex-wrap alig-items-center w-100 justify-content-between">
-          <div className="brand-list__item">
-            <a href="#" className="brand-list__item-link">
-              <Image
-                src="/images/brands/brand01.webp"
-                alt="no-image"
-                layout="fill"
-                width={170}
-                height={170}
-              />
-            </a>
-          </div>
-          <div className="brand-list__item">
-            <a href="#" className="brand-list__item-link">
-              <Image
-                src="/images/brands/brand02.webp"
-                alt="no-image"
-                layout="fill"
-                width={170}
-                height={170}
-              />
-            </a>
-          </div>
-          <div className="brand-list__item">
-            <a href="#" className="brand-list__item-link">
-              <Image
-                src="/images/brands/brand03.webp"
-                alt="no-image"
-                layout="fill"
-                width={170}
-                height={170}
-              />
-            </a>
-          </div>
-          <div className="brand-list__item">
-            <a href="#" className="brand-list__item-link">
-              <Image
-                src="/images/brands/brand04.webp"
-                alt="no-image"
-                layout="fill"
-                width={170}
-                height={170}
-              />
-            </a>
-          </div>
-
-          <div className="brand-list__item">
-            <a href="#" className="brand-list__item-link">
-              <Image
-                src="/images/brands/brand05.webp"
-                alt="no-image"
-                layout="fill"
-                width={170}
-                height={170}
-              />
-            </a>
-          </div>
-
-          <div className="brand-list__item">
-            <a href="#" className="brand-list__item-link">
-              <Image
-                src="/images/brands/brand06.webp"
-                alt="no-image"
-                layout="fill"
-                width={170}
-                height={170}
-              />
-            </a>
+    <>
+      <div className="w-full py-6 bg-000 radius-large-lg border-200-lg mt-4 mt-6-lg">
+        <div className="d-flex jc-center ai-center">
+          <div className="d-flex ml-2"></div>
+          <p className="text-h3 color-900">محبوب‌ترین برندها</p>
+        </div>
+        <div className="mt-3 overflow-hidden w-full">
+          <div>
+            <Swiper
+              modules={[FreeMode , Autoplay]}
+              slidesPerView={3}
+              spaceBetween={1}
+              freeMode={true}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+            >
+              <SwiperSlide className="br-list-horizontal-0">
+                <a
+                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
+                  data-cro-id="hp-favorited-barnds"
+                  href="#"
+                  dideo-checked="true"
+                >
+                  <div
+                    className="d-flex ai-center jc-center"
+                    style={{ width: "110px", height: "110px" }}
+                  >
+                    <img
+                      className="w-100 d-inline-block lazyloaded"
+                      src="/images/brands/brand01.webp"
+                      style={{ objectFit: "contain" }}
+                    />
+                  </div>
+                </a>
+              </SwiperSlide>
+              <SwiperSlide className="br-list-horizontal-0">
+                <a
+                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
+                  data-cro-id="hp-favorited-barnds"
+                  href="#"
+                  dideo-checked="true"
+                >
+                  <div
+                    className="d-flex ai-center jc-center"
+                    style={{ width: "110px", height: "110px" }}
+                  >
+                    <img
+                      className="w-100 d-inline-block lazyloaded"
+                      src="/images/brands/brand02.webp"
+                      style={{ objectFit: "contain" }}
+                    />
+                  </div>
+                </a>
+              </SwiperSlide>
+              <SwiperSlide className="br-list-horizontal-0">
+                <a
+                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
+                  data-cro-id="hp-favorited-barnds"
+                  href="#"
+                  dideo-checked="true"
+                >
+                  <div
+                    className="d-flex ai-center jc-center"
+                    style={{ width: "110px", height: "110px" }}
+                  >
+                    <img
+                      className="w-100 d-inline-block lazyloaded"
+                      src="/images/brands/brand03.webp"
+                      style={{ objectFit: "contain" }}
+                    />
+                  </div>
+                </a>
+              </SwiperSlide>
+              <SwiperSlide className="br-list-horizontal-0">
+                <a
+                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
+                  data-cro-id="hp-favorited-barnds"
+                  href="#"
+                  dideo-checked="true"
+                >
+                  <div
+                    className="d-flex ai-center jc-center"
+                    style={{ width: "110px", height: "110px" }}
+                  >
+                    <img
+                      className="w-100 d-inline-block lazyloaded"
+                      src="/images/brands/brand04.webp"
+                      style={{ objectFit: "contain" }}
+                    />
+                  </div>
+                </a>
+              </SwiperSlide>
+              <SwiperSlide className="br-list-horizontal-0">
+                <a
+                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
+                  data-cro-id="hp-favorited-barnds"
+                  href="#"
+                  dideo-checked="true"
+                >
+                  <div
+                    className="d-flex ai-center jc-center"
+                    style={{ width: "110px", height: "110px" }}
+                  >
+                    <img
+                      className="w-100 d-inline-block lazyloaded"
+                      src="/images/brands/brand05.webp"
+                      style={{ objectFit: "contain" }}
+                    />
+                  </div>
+                </a>
+              </SwiperSlide>
+              <SwiperSlide className="br-list-horizontal-0">
+                <a
+                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
+                  data-cro-id="hp-favorited-barnds"
+                  href="#"
+                  dideo-checked="true"
+                >
+                  <div
+                    className="d-flex ai-center jc-center"
+                    style={{ width: "110px", height: "110px" }}
+                  >
+                    <img
+                      className="w-100 d-inline-block lazyloaded"
+                      src="/images/brands/brand06.webp"
+                      style={{ objectFit: "contain" }}
+                    />
+                  </div>
+                </a>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>
-    
+    </>
   );
 }

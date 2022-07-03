@@ -8,9 +8,20 @@ interface IProps {
 export default function Category(props: IProps) {
   return (
     <div className="w-full d-flex flex-column jc-center align-items py-4 bg-000 mt-4 mt-6-lg">
-      <div className="mb-6 mb-9-lg align-center">
-        <h3 className="text-h3 color-900">دسته‌بندی‌های بيوتی</h3>
-      </div>
+        <div className="d-flex jc-center ai-center mb-4">
+          <div className="d-flex ml-2 ">
+            <svg
+              style={{
+                width: "24px",
+                height: "24px",
+                fill: "var(--color-icon-rating-0-2)",
+              }}
+            >
+              <use href="#topBrands"></use>
+            </svg>
+          </div>
+          <p className="text-h3 color-900">دسته بندی های بیوتی</p>
+        </div>
       <div className="w-full d-flex ai-start jc-between flex-wrap gap-5 gap-y-6 gap-0-lg gap-y-8-lg">
         <span
           data-cro-id="hp-categories-icons"

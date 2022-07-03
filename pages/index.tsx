@@ -18,6 +18,7 @@ const Home: NextPage = () => {
       <Swipper />
 
       <div className="container-2xl-w mx-auto px-4-lg px-0-2xl">
+        <PupolarBrands />
         <Category />
         <CategorySuggestion />
         <SuggestionSlider />
