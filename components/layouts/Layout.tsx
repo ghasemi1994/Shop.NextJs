@@ -14,7 +14,7 @@ export default function Layout({ children }: PropType) {
         <div
           className="grow-1 bg-000 d-flex flex-column w-100 align-items-center shrink-0"
           style={{
-            paddingTop: "106px",
+            paddingTop: "132px",
             paddingBottom: "0",
             paddingLeft: "0",
           }}

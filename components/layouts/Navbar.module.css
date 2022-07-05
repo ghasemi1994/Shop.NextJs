@@ -1,0 +1,5 @@
+
+.navbar_header_desktop__hide {
+    display: none !important;
+    transition: all 1s;
+}

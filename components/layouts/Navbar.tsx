@@ -1,17 +1,48 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
+import React, { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { useOnclickOutside } from "../../hooks/useOnClickOutside";
+import styles from "./Navbar.module.css";
+import { useDispatch, useSelector } from "../../store/store";
+import { setShow, getShowState } from "../../store/slices/menuSlice";
 
-export default function Navbar() {
+interface IProps {
+  className?: string;
+}
+export default function Navbar(props: IProps) {
+  const [hide, setHide] = useState<boolean>(false);
+  const { show } = useSelector(getShowState);
+  const dispatch = useDispatch();
+  const notifyDomNode = useOnclickOutside(() => {
+    if (show) dispatch(setShow(false));
+  });
+  useEffect(() => {
+    var prevScrollpos = window.pageYOffset;
+    window.addEventListener("scroll", () => {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        setHide(false);
+      } else {
+        setHide(true);
+      }
+      prevScrollpos = currentScrollPos;
+    });
+  }, [hide]);
+
   return (
-    <section className="wrapper" style={{height:"55px"}}>
+    <section
+      className={`wrapper ${hide ? styles.navbar_header_desktop__hide : ""}`}
+      style={{ height: "55px" }}
+    >
       <div className="header-item-right">
         <h2 className="h2">بیا تو بیوتی</h2>
       </div>
       <div className="header-item-center">
-        <div className="overlay"></div>
-        <nav className="menu" id="menu">
+        <div className={`overlay ${show ? "active" : ""}`}></div>
+        <nav
+          className={`menu ${show ? "active" : ""}`}
+          id="menu"
+          ref={notifyDomNode}
+        >
           <div className="menu-mobile-header">
             <button type="button" className="menu-mobile-arrow">
               <i className="ion ion-ios-arrow-back"></i>
@@ -213,7 +244,7 @@ export default function Navbar() {
           </ul>
         </nav>
       </div>
-      <div className="header-item-left">
+      {/* <div className="header-item-left">
         <a href="#" className="menu-icon">
           <i className="ion ion-md-search"></i>
         </a>
@@ -223,13 +254,17 @@ export default function Navbar() {
         <a href="#" className="menu-icon">
           <i className="ion ion-md-cart"></i>
         </a>
-        <button type="button" className="menu-mobile-toggle">
+        <button
+          type="button"
+          className="menu-mobile-toggle"
+          onClick={() => setShowMenu(!showMenu)}
+        >
           <span></span>
           <span></span>
           <span></span>
           <span></span>
         </button>
-      </div>
+      </div> */}
     </section>
   );
 }

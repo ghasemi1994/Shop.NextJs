@@ -1,0 +1,7 @@
+@media only screen and  (max-width: 992px) {
+     .top_header__container{      
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

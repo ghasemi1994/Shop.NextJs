@@ -24,70 +24,7 @@ const Home: NextPage = () => {
         <SuggestionSlider />
         <BestProduct />
       </div>
-
-      <div className="w-full d-flex flex-wrap align-items-start flex-row p-4 d-none">
-        <div className="col-lg-4 col-md-6 col-sm-12 p-2">
-          <div className="card makeup-card">
-            <Image
-              src="/images/cards/card2.webp"
-              className="card-img-top"
-              alt="no-image"
-              layout="fill"
-            />
-            <div className="card-body">
-              <h5 className="card-title">ميكاپ</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the cards content.
-              </p>
-              <a href="#" className="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 col-sm-12 p-2">
-          <div className="card makeup-card ">
-            <Image
-              src="/images/cards/card3.webp"
-              className="card-img-top"
-              alt="no-image"
-              layout="fill"
-            />
-
-            <div className="card-body">
-              <h5 className="card-title">ميكاپ</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the cards content.
-              </p>
-              <a href="#" className="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 col-sm-12 p-2">
-          <div className="card makeup-card ">
-            <Image
-              src="/images/cards/card1.webp"
-              className="card-img-top"
-              alt="no-image"
-              layout="fill"
-            />
-            <div className="card-body">
-              <h5 className="card-title">ميكاپ</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the cards content.
-              </p>
-              <a href="#" className="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </>
   );
 };
