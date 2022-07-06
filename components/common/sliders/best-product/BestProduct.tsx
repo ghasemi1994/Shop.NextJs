@@ -25,7 +25,7 @@ export default function BestProduct() {
         <div className="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events swiper-container-free-mode swiper-container-rtl">
           <Swiper
             modules={[Pagination]}
-            spaceBetween={25}
+            spaceBetween={2}
             pagination={{
               clickable: true,
             }}

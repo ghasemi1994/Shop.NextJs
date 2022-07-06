@@ -1,4 +1,5 @@
 import React from "react";
+import { MdExpandLess } from "react-icons/md";
 
 export default function Footer() {
   return (
@@ -9,6 +10,18 @@ export default function Footer() {
             <div className="ml-4" style={{ height: "30px" }}>
               <h3>سریع بیا تو بيوتی </h3>
             </div>
+            <button
+              onClick={() => window.scrollTo(0, 0)}
+              className="relative d-flex ai-center user-select-none Button-module_btn__daEdK text-button-2 Button-module_btn--medium__7lzYn
+             Button-module_btn--neutralOutlined__TvBmP Button-module_btn--black__DAqpj radius-medium d-flex jc-center ai-center px-3 px-4-sm py-1 radius pointer"
+            >
+              <div className="d-flex ai-center jc-center relative grow-1 font-primary">
+                <span className="color-400 ml-2">بازگشت به بالا</span>
+                <div className="d-flex">
+                  <MdExpandLess size={20} className="color-400" />
+                </div>
+              </div>
+            </button>
           </div>
 
           <div className="mb-8 mt-4 mt-3-md mb-0-md d-flex ai-center flex-wrap flex-nowrap-lg text-body-2 color-700">
@@ -346,12 +359,12 @@ export default function Footer() {
             <div className="w-full w-auto-lg d-flex ai-center mt-4 mt-0-lg jc-center jc-end-lg">
               <div className="pointer p-2 p-4-lg d-flex ai-center jc-center border-200 radius mr-2">
                 <div style={{ width: "75px", height: "75px" }}>
-                 Nemad1
+                  <img src="https://i-wordpress.ir/woodland/zomorod/wp-content/uploads/2020/01/samandehi.png" className="w-100" style={{objectFit:"contain"}}/>
                 </div>
               </div>
               <div className="pointer p-2 p-4-lg d-flex ai-center jc-center border-200 radius mr-2">
                 <div style={{ width: "75px", height: "75px" }}>
-                Nemad2
+                <img src="https://i-wordpress.ir/woodland/zomorod/wp-content/uploads/2020/01/enamad.png" className="w-100" style={{objectFit:"contain"}}/>
                 </div>
               </div>
               <a
@@ -361,7 +374,7 @@ export default function Footer() {
                 dideo-checked="true"
               >
                 <div style={{ width: "75px", height: "75px" }}>
-                Nemad3
+                <img src="https://i-wordpress.ir/woodland/zomorod/wp-content/uploads/2020/01/samandehi.png" className="w-100" style={{objectFit:"contain"}}/>
                 </div>
               </a>
             </div>

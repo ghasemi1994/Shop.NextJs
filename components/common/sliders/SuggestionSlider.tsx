@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay } from "swiper";
+import { Autoplay, FreeMode } from "swiper";
 import Image from "next/image";
 import styles from "./SuggestionSlider.module.css";
 
@@ -30,10 +30,15 @@ export default function SuggestionSlider() {
           swiper-container-horizontal swiper-container-pointer-events swiper-container-free-mode swiper-container-rtl ${styles.widget_amazing_mini_carousel}`}
           >
             <Swiper
-              modules={[Autoplay]}
+              modules={[Autoplay, FreeMode]}
               loop={true}
               spaceBetween={5}
               slidesPerView={5}
+              autoplay={{
+                delay: 4500,
+                disableOnInteraction: false,
+              }}
+              freeMode={true}
               // breakpoints={{
               //   0: {
               //     slidesPerView: 2,

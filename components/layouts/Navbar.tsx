@@ -30,7 +30,9 @@ export default function Navbar(props: IProps) {
 
   return (
     <section
-      className={`wrapper ${hide ? styles.navbar_header_desktop__hide : ""}`}
+      className={`wrapper ${hide ? styles.navbar_header_desktop__hide : ""} ${
+        styles.navbar_mobile_hide
+      }`}
       style={{ height: "55px" }}
     >
       <div className="header-item-right">
@@ -254,11 +256,7 @@ export default function Navbar(props: IProps) {
         <a href="#" className="menu-icon">
           <i className="ion ion-md-cart"></i>
         </a>
-        <button
-          type="button"
-          className="menu-mobile-toggle"
-          onClick={() => setShowMenu(!showMenu)}
-        >
+        <button type="button" className="menu-mobile-toggle">
           <span></span>
           <span></span>
           <span></span>

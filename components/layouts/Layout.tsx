@@ -12,12 +12,7 @@ export default function Layout({ children }: PropType) {
       <div className="h-100 d-flex flex-column bg-000 ai-center">
         <Header />
         <div
-          className="grow-1 bg-000 d-flex flex-column w-100 align-items-center shrink-0"
-          style={{
-            paddingTop: "132px",
-            paddingBottom: "0",
-            paddingLeft: "0",
-          }}
+          className={`grow-1 bg-000 d-flex flex-column w-100 align-items-center shrink-0 ${styles.main}`}
         >
           {children}
         </div>
