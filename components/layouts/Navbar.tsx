@@ -4,6 +4,7 @@ import { useOnclickOutside } from "../../hooks/useOnClickOutside";
 import styles from "./Navbar.module.css";
 import { useDispatch, useSelector } from "../../store/store";
 import { setShow, getShowState } from "../../store/slices/menuSlice";
+import Link from "next/link";
 
 interface IProps {
   className?: string;
@@ -36,7 +37,9 @@ export default function Navbar(props: IProps) {
       style={{ height: "55px" }}
     >
       <div className="header-item-right">
-        <h2 className="h2">بیا تو بیوتی</h2>
+        <h2 className="h2">
+          <Link href="/">بیا تو بیوتی</Link>
+        </h2>
       </div>
       <div className="header-item-center">
         <div className={`overlay ${show ? "active" : ""}`}></div>

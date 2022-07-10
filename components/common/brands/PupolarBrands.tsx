@@ -14,15 +14,25 @@ export default function PupolarBrands(props: IProps) {
     <>
       <div className="w-full py-4 bg-000 radius-large-lg border-200-lg mt-4 mt-6-lg">
         <div className="d-flex jc-center ai-center">
-          <div className="d-flex ml-2"></div>
+          <div className="d-flex ml-2">
+            <svg
+              style={{
+                width: 24,
+                height: 24,
+                fill: "var(--color-icon-rating-0-2)",
+              }}
+            >
+              <use xlinkHref="#topBrands" />
+            </svg>
+          </div>
           <p className="text-h3 color-900">محبوب‌ترین برندها</p>
         </div>
         <div className="mt-3 overflow-hidden w-full">
           <div>
             <Swiper
-              modules={[FreeMode, Autoplay , A11y]}
+              modules={[FreeMode, Autoplay, A11y]}
               spaceBetween={1}
-              loop={true}              
+              //loop={true}
               breakpoints={{
                 0: {
                   slidesPerView: 2,
@@ -45,8 +55,8 @@ export default function PupolarBrands(props: IProps) {
                 1280: {
                   slidesPerView: 7,
                 },
-              }}          
-              centeredSlides={true}
+              }}
+              centeredSlides={false}
             >
               <SwiperSlide className="br-list-horizontal-0">
                 <a
@@ -220,7 +230,6 @@ export default function PupolarBrands(props: IProps) {
                 </a>
               </SwiperSlide>
             </Swiper>
-            
           </div>
         </div>
       </div>

@@ -145,6 +145,9 @@ body {
     min-height: 100vh;
     font-family: primary-font;
 }
+button{
+    font-family: 'primary-font';
+}
 * {
     box-sizing: border-box;
     outline: none;
@@ -32201,14 +32204,7 @@ img[alt]:after {
 .ratio-1-1 {
     aspect-ratio: 1/1;
 }
-@font-face {
-    font-family: barcode;
-    src: url(/_next/static/media/barcode.a97b35f4.ttf);
-}
-@font-face {
-    font-family: Libre Barcode\128;
-    src: url(/_next/static/media/barcode.a97b35f4.ttf);
-}
+
 .br-list-vertical-no-padding-200 + .br-list-vertical-no-padding-200 {
     border-top: 1px solid var(--color-neutral-200);
 }
