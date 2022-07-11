@@ -1,4 +1,4 @@
-import styles from "../index.module.css";
+import styles from "../../index.module.css";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -23,19 +23,19 @@ export default function ProductViewer() {
         className="mb-5"
       >
         <SwiperSlide className="d-flex jc-center">
-          <img src="/images/product/1.png" style={{ width: "350px" }} />
+          <img src="/images/product/pr1.jpg" style={{ width: "350px" }} />
         </SwiperSlide>
         <SwiperSlide className="d-flex jc-center">
-          <img src="/images/product/2.png" style={{ width: "350px" }} />
+          <img src="/images/product/pr2.jpg" style={{ width: "350px" }} />
         </SwiperSlide>
         <SwiperSlide className="d-flex jc-center">
-          <img src="/images/product/3.webp" style={{ width: "350px" }} />
+          <img src="/images/product/pr3.jpg" style={{ width: "350px" }} />
         </SwiperSlide>
         <SwiperSlide className="d-flex jc-center">
-          <img src="/images/product/4.png" style={{ width: "350px" }} />
+          <img src="/images/product/pr4.jpg" style={{ width: "350px" }} />
         </SwiperSlide>
         <SwiperSlide className="d-flex jc-center">
-          <img src="/images/product/5.webp" style={{ width: "350px" }} />
+          <img src="/images/product/pr5.jpg" style={{ width: "350px" }} />
         </SwiperSlide>
       </Swiper>
       <Swiper
@@ -47,16 +47,16 @@ export default function ProductViewer() {
         modules={[Thumbs]}
       >
         <SwiperSlide className="border-200 p-1 pointer radius">
-          <img src="/images/product/1.png" />
+          <img src="/images/product/pr1.jpg" />
         </SwiperSlide>
         <SwiperSlide className="border-200 p-1 pointer radius">
-          <img src="/images/product/2.png" />
+          <img src="/images/product/pr2.jpg" />
         </SwiperSlide>
         <SwiperSlide className="border-200 p-1 pointer radius">
-          <img src="/images/product/3.webp" />
+          <img src="/images/product/pr3.jpg" />
         </SwiperSlide>
         <SwiperSlide className="border-200 p-1 pointer radius">
-          <img src="/images/product/4.png" />
+          <img src="/images/product/pr4.jpg" />
         </SwiperSlide>
       </Swiper>
     </div>

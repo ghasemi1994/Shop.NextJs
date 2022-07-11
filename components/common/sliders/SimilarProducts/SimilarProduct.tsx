@@ -3,28 +3,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, FreeMode } from "swiper";
-import Image from "next/image";
-import styles from "./SuggestionSlider.module.css";
 
-export default function SuggestionSlider() {
+export default function SimilarProduct() {
   return (
     <>
-      <div className="w-full d-flex flex-column jc-center align-items py-4 bg-000 radius-large-lg border-200-lg mt-4 mt-6-lg">
-        <div className="d-flex jc-between jc-center-lg ai-center px-2 px-5-lg pos-relative">
-          <div className="d-flex jc-center ai-center">
-            <div className="d-flex ml-2"></div>
-            <p className="text-h3 color-900">پيشنهاد های ویژه</p>
+      <div className="d-flex flex-column pos-relative overflow-hidden w-full pt-2 border-200-lg radius-medium-lg mt-4-lg pb-3">
+        <div className="break-words py-3 px-5 py-2 user-select-none">
+          <div className="d-flex ai-center grow-1">
+            <p className="grow-1 text-h5 color-900">کالاهای مشابه</p>
           </div>
-          <a
-            className="d-inline-flex ai-center pointer text-button-1 pos-absolute-lg left-0 top-0 pl-4 shrink-0"
-            href="#"
-            dideo-checked="true"
-          >
-            <span>مشاهده همه</span>
-          </a>
+          <div
+            className="mt-2"
+            style={{
+              backgroundColor: "var(--color-primary-700)",
+              height: "0.2rem",
+              width: "7rem",
+            }}
+          ></div>
         </div>
-
-        <div className="d-flex flex-nowrap py-3 py-5-lg pr-0 jc-stretch overflow-hidden pos-relative mt-4 mt-6-lg radius-large-lg">
+        <div>
           <Swiper
             modules={[Autoplay, FreeMode]}
             loop={true}
@@ -55,7 +52,7 @@ export default function SuggestionSlider() {
                 slidesPerView: 5,
               },
               1280: {
-                slidesPerView: 6,
+                slidesPerView: 7,
               },
             }}
           >
@@ -156,7 +153,7 @@ export default function SuggestionSlider() {
                               <br />
                             </div>
                             <div style={{ width: 150, height: 150 }}>
-                              <img
+                            <img
                                 className="w-100 radius-medium d-inline-block lazyloaded"
                                 width={150}
                                 height={150}
@@ -229,7 +226,7 @@ export default function SuggestionSlider() {
                               <br />
                             </div>
                             <div style={{ width: 150, height: 150 }}>
-                              <img
+                            <img
                                 className="w-100 radius-medium d-inline-block lazyloaded"
                                 width={150}
                                 height={150}
@@ -295,7 +292,7 @@ export default function SuggestionSlider() {
                               <br />
                             </div>
                             <div style={{ width: 150, height: 150 }}>
-                              <img
+                            <img
                                 className="w-100 radius-medium d-inline-block lazyloaded"
                                 width={150}
                                 height={150}
@@ -361,7 +358,7 @@ export default function SuggestionSlider() {
                               <br />
                             </div>
                             <div style={{ width: 150, height: 150 }}>
-                              <img
+                            <img
                                 className="w-100 radius-medium d-inline-block lazyloaded"
                                 width={150}
                                 height={150}
@@ -427,7 +424,7 @@ export default function SuggestionSlider() {
                               <br />
                             </div>
                             <div style={{ width: 150, height: 150 }}>
-                              <img
+                            <img
                                 className="w-100 radius-medium d-inline-block lazyloaded"
                                 width={150}
                                 height={150}
@@ -493,7 +490,7 @@ export default function SuggestionSlider() {
                               <br />
                             </div>
                             <div style={{ width: 150, height: 150 }}>
-                              <img
+                            <img
                                 className="w-100 radius-medium d-inline-block lazyloaded"
                                 width={150}
                                 height={150}
@@ -559,7 +556,7 @@ export default function SuggestionSlider() {
                               <br />
                             </div>
                             <div style={{ width: 150, height: 150 }}>
-                              <img
+                            <img
                                 className="w-100 radius-medium d-inline-block lazyloaded"
                                 width={150}
                                 height={150}

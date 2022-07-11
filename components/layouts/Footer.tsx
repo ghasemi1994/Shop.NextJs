@@ -136,7 +136,7 @@ export default function Footer() {
                 href="#"
                 dideo-checked="true"
               >
-                اتاق خبر دیجی‌کالا
+                اتاق خبر بیوتی
               </a>
               <a
                 className="text-body-1 color-500 mb-2 d-block"
@@ -144,7 +144,7 @@ export default function Footer() {
                 href="#"
                 dideo-checked="true"
               >
-                فروش در دیجی‌کالا
+                فروش در بیوتی
               </a>
               <a
                 className="text-body-1 color-500 mb-2 d-block"
@@ -160,7 +160,7 @@ export default function Footer() {
                 href="#"
                 dideo-checked="true"
               >
-                تماس با دیجی‌کالا
+                تماس با بیوتی
               </a>
               <a
                 className="text-body-1 color-500 mb-2 d-block"
@@ -168,7 +168,7 @@ export default function Footer() {
                 href="#"
                 dideo-checked="true"
               >
-                درباره دیجی‌کالا
+                درباره بیوتی
               </a>
             </div>
 
@@ -218,7 +218,7 @@ export default function Footer() {
 
             <div className="d-block grow-1-lg w-50 w-unset-lg d-none d-block-md">
               <p className="color-700 text-h5 mb-2 d-block">
-                راهنمای خرید از دیجی‌کالا
+                راهنمای خرید از بیوتی
               </p>
               <a
                 className="text-body-1 color-500 mb-2 d-block"

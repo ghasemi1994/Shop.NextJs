@@ -1,0 +1,16 @@
+@media (min-width: 1440px) {
+    .minibox_buybox__wrapper {
+        display: block;
+        min-width: 300px;
+    }
+}
+
+.miniBuyBox {
+    background: linear-gradient(0deg, hsla(240, 3%, 94%, 0.5), hsla(240, 3%, 94%, 0.5)), #fff;
+}
+
+@media (min-width: 1024px) {
+    .pd_Specification {
+        width: 256px;
+    }
+}

@@ -29,6 +29,7 @@ export default function BestProduct() {
             pagination={{
               clickable: true,
             }}
+            slidesPerView="auto"
             breakpoints={{
               0: {
                 slidesPerView: 1,
