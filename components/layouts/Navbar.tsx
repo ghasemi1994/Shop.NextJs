@@ -5,7 +5,7 @@ import styles from "./Navbar.module.css";
 import { useDispatch, useSelector } from "../../store/store";
 import { setShow, getShowState } from "../../store/slices/menuSlice";
 import Link from "next/link";
-
+import { categories } from "../../constants/category";
 interface IProps {
   className?: string;
 }
@@ -59,7 +59,8 @@ export default function Navbar(props: IProps) {
           </div>
           <ul className="menu-section">
             <li className="menu-item">
-              <a href="#">خانه</a>
+              <Link href="/">خانه</Link>
+              <link></link>
             </li>
             <li className="menu-item-has-children">
               <a href="#">
@@ -119,103 +120,19 @@ export default function Navbar(props: IProps) {
                 دسته بندی <MdKeyboardArrowDown />
               </a>
               <div className="menu-subs menu-mega menu-column-4">
-                <div className="list-item">
-                  <h4 className="title">Mens Fashion</h4>
-                  <ul>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                  </ul>
-                  <h4 className="title">Kids Fashion</h4>
-                  <ul>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="list-item">
-                  <h4 className="title">Womens Fashion</h4>
-                  <ul>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                  </ul>
-                  <h4 className="title">Health Beauty</h4>
-                  <ul>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="list-item">
-                  <h4 className="title">Home Lifestyle</h4>
-                  <ul>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                    <li>
-                      <a href="#">Product List</a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="list-item">
-                  {/* <Image
-                      src="/images/product/product-01.jpg"
-                      loading="lazy"
-                      alt="Product Images"
-                      layout="fill"
-                    /> */}
+                <div className="list-item d-flex flex-column">
+                  {categories?.map((item, index) => (
+                    <div className="d-flex flex-column mb-2" key={item.id}>
+                      <h3 className="title">{item.title}</h3>
+                      <ul>
+                        {item?.children?.map((sub, idx) => (
+                          <li key={idx}>
+                            <a href="#">{sub.title}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </div>
               </div>
             </li>

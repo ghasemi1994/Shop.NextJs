@@ -1,7 +1,10 @@
 import React from "react";
 import styles from "./BuyBoxDetail.module.css";
 
-export default function BuyBoxDetail() {
+interface IProps {
+  introduce: string;
+}
+export default function BuyBoxDetail(props: IProps) {
   return (
     <>
       <div
@@ -34,7 +37,8 @@ export default function BuyBoxDetail() {
       <div className="d-flex w-full">
         <div className="grow-1 w-min-0">
           <article
-            className="mt-4-lg px-5 px-0-lg pb-5" style={{borderBottom: "8px solid var(--color-neutral-100)"}}
+            className="mt-4-lg px-5 px-0-lg pb-5"
+            style={{ borderBottom: "8px solid var(--color-neutral-100)" }}
             id="PdpShortReview"
           >
             <div className="break-words py-3">
@@ -43,16 +47,7 @@ export default function BuyBoxDetail() {
               </div>
               <div className="mt-2 Title-module_Title__line__gGmPh Title-module_Title__line--red__jWT3P" />
             </div>
-            <div className="text-body-1 color-800">
-              رژ لب جامد الیزا شماره ۲۲ با رنگ گوشتی و در سایز کوچک (MINI
-              LIPSTICK) بوده که به راحتی میتوانید آن را همراه خود داشته
-              باشید.الیزا با استفاده از مواد اولیه مرغوب و فرمولاسیون اختصاصی
-              تولید شده که حاوی روغنهای مرطوب کننده، رنگهای مجاز آرایشی بوده و
-              فاقد هرگونه فلزات سنگین می باشد.این محصول ساختاری سبک و لطیف دارد
-              که رطوبت لب را حفظ می‌کند و باعث نرمی و لطافت لبها پس از استفاده
-              می شود که در حقیقت از ایجاد خشکی و پوسته پوسته شدن لب ها جلوگیری
-              می‌کند.
-            </div>
+            <div className="text-body-1 color-800">{props?.introduce}</div>
             <div className="d-flex content-between w-full overflow-x-scroll overflow-x-hidden-lg mt-4" />
           </article>
           <section
@@ -148,10 +143,7 @@ export default function BuyBoxDetail() {
         <div
           className={`d-none mr-10 pos-relative ${styles.minibox_buybox__wrapper}`}
         >
-          <div
-            className="pos-sticky "
-            style={{ top: "135.031px" }}
-          >
+          <div className="pos-sticky " style={{ top: "135.031px" }}>
             <div
               className={`pl-5 mb-2 mt-5 text-body-2 bg-100 radius p-4 border-200 ${styles.miniBuyBox}`}
             >
@@ -214,9 +206,7 @@ export default function BuyBoxDetail() {
                     </svg>
                   </div>
                 </div>
-                <div className="color-700 text-body-2">
-                  موجود در انبار ما{" "}
-                </div>
+                <div className="color-700 text-body-2">موجود در انبار ما </div>
               </div>
               <div className="pos-relative w-full w-auto-lg">
                 <div className="py-3 px-5 p-0-lg pt-3-lg w-full w-auto-lg border-t-200-lg z-3 bg-000 shadow-fab-button shadow-none-lg BuyBoxFooter_buyboxFooter__actionWrapper__hIfpJ">

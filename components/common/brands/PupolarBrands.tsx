@@ -10,6 +10,20 @@ interface IProps {
   className?: string;
 }
 export default function PupolarBrands(props: IProps) {
+  const brands = [
+    "/images/brands/1.png",
+    "/images/brands/2.jpg",
+    "/images/brands/3.png",
+    "/images/brands/4.png",
+    "/images/brands/5.png",
+    "/images/brands/6.jpg",
+    "/images/brands/7.png",
+    "/images/brands/8.png",
+    "/images/brands/9.png",
+    "/images/brands/10.png",
+    "/images/brands/11.jpg",
+    "/images/brands/12.png",
+  ];
   return (
     <>
       <div className="w-full py-4 bg-000 radius-large-lg border-200-lg mt-4 mt-6-lg">
@@ -32,7 +46,6 @@ export default function PupolarBrands(props: IProps) {
             <Swiper
               modules={[FreeMode, Autoplay, A11y]}
               spaceBetween={1}
-              //loop={true}
               breakpoints={{
                 0: {
                   slidesPerView: 2,
@@ -58,177 +71,27 @@ export default function PupolarBrands(props: IProps) {
               }}
               centeredSlides={false}
             >
-              <SwiperSlide className="br-list-horizontal-0">
-                <a
-                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
-                  data-cro-id="hp-favorited-barnds"
-                  href="#"
-                  dideo-checked="true"
-                >
-                  <div
-                    className="d-flex ai-center jc-center"
-                    style={{ width: "110px", height: "110px" }}
+              {brands.map((item, index) => (
+                <SwiperSlide className="br-list-horizontal-0" key={index}>
+                  <a
+                    className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
+                    data-cro-id="hp-favorited-barnds"
+                    href="#"
+                    dideo-checked="true"
                   >
-                    <img
-                      className="w-100 d-inline-block lazyloaded"
-                      src="https://dkstatics-public.digikala.com/digikala-brands/7d615272ba7fc5dd708195ae858e2971de86a06f_1649498033.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div>
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="br-list-horizontal-0">
-                <a
-                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
-                  data-cro-id="hp-favorited-barnds"
-                  href="#"
-                  dideo-checked="true"
-                >
-                  <div
-                    className="d-flex ai-center jc-center"
-                    style={{ width: "110px", height: "110px" }}
-                  >
-                    <img
-                      className="w-100 d-inline-block lazyloaded"
-                      src="https://dkstatics-public.digikala.com/digikala-brands/3960.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div>
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="br-list-horizontal-0">
-                <a
-                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
-                  data-cro-id="hp-favorited-barnds"
-                  href="#"
-                  dideo-checked="true"
-                >
-                  <div
-                    className="d-flex ai-center jc-center"
-                    style={{ width: "110px", height: "110px" }}
-                  >
-                    <img
-                      className="w-100 d-inline-block lazyloaded"
-                      src="https://dkstatics-public.digikala.com/digikala-brands/311.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div>
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="br-list-horizontal-0">
-                <a
-                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
-                  data-cro-id="hp-favorited-barnds"
-                  href="#"
-                  dideo-checked="true"
-                >
-                  <div
-                    className="d-flex ai-center jc-center"
-                    style={{ width: "110px", height: "110px" }}
-                  >
-                    <img
-                      className="w-100 d-inline-block lazyloaded"
-                      src="https://dkstatics-public.digikala.com/digikala-brands/3960.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div>
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="br-list-horizontal-0">
-                <a
-                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
-                  data-cro-id="hp-favorited-barnds"
-                  href="#"
-                  dideo-checked="true"
-                >
-                  <div
-                    className="d-flex ai-center jc-center"
-                    style={{ width: "110px", height: "110px" }}
-                  >
-                    <img
-                      className="w-100 d-inline-block lazyloaded"
-                      src="https://dkstatics-public.digikala.com/digikala-brands/af664f0bcf9bc412b741c618e6e52fc2d090198f_1619269008.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div>
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="br-list-horizontal-0">
-                <a
-                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
-                  data-cro-id="hp-favorited-barnds"
-                  href="#"
-                  dideo-checked="true"
-                >
-                  <div
-                    className="d-flex ai-center jc-center"
-                    style={{ width: "110px", height: "110px" }}
-                  >
-                    <img
-                      className="w-100 d-inline-block lazyloaded"
-                      src="https://dkstatics-public.digikala.com/digikala-brands/5518.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div>
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="br-list-horizontal-0">
-                <a
-                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
-                  data-cro-id="hp-favorited-barnds"
-                  href="#"
-                  dideo-checked="true"
-                >
-                  <div
-                    className="d-flex ai-center jc-center"
-                    style={{ width: "110px", height: "110px" }}
-                  >
-                    <img
-                      className="w-100 d-inline-block lazyloaded"
-                      src="/images/brands/brand05.webp"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div>
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="br-list-horizontal-0">
-                <a
-                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
-                  data-cro-id="hp-favorited-barnds"
-                  href="#"
-                  dideo-checked="true"
-                >
-                  <div
-                    className="d-flex ai-center jc-center"
-                    style={{ width: "110px", height: "110px" }}
-                  >
-                    <img
-                      className="w-100 d-inline-block lazyloaded"
-                      src="https://dkstatics-public.digikala.com/digikala-brands/5518.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div>
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="br-list-horizontal-0">
-                <a
-                  className="px-4 py-1 overflow-hidden d-flex ai-center jc-center h-full shrink-0 br-list-horizontal-0"
-                  data-cro-id="hp-favorited-barnds"
-                  href="#"
-                  dideo-checked="true"
-                >
-                  <div
-                    className="d-flex ai-center jc-center"
-                    style={{ width: "110px", height: "110px" }}
-                  >
-                    <img
-                      className="w-100 d-inline-block lazyloaded"
-                      src="https://dkstatics-public.digikala.com/digikala-brands/7d615272ba7fc5dd708195ae858e2971de86a06f_1649498033.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div>
-                </a>
-              </SwiperSlide>
+                    <div
+                      className="d-flex ai-center jc-center"
+                      style={{ width: "110px", height: "110px" }}
+                    >
+                      <img
+                        className="w-100 d-inline-block lazyloaded"
+                        src={item}
+                        style={{ objectFit: "contain" }}
+                      />
+                    </div>
+                  </a>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>

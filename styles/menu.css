@@ -247,8 +247,8 @@ ul.menu-section {
 }
 .header .menu > ul > li .menu-subs.menu-column-4 > .list-item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
+  /* -ms-flex: 0 0 25%;
+  flex: 0 0 25%; */
   padding: 0 1rem;
 }
 .header .menu > ul > li .menu-subs.menu-column-4 > .list-item .title {

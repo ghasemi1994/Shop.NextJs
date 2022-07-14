@@ -1,15 +1,17 @@
 import React from "react";
 import styles from "../../index.module.css";
 import { BsShieldFillCheck, BsCheckLg, BsStarFill } from "react-icons/bs";
+import { sepratorMoney } from "../../../../utils/TextConvertor";
 
-export default function BuyBox() {
+interface IProps {
+  price: number;
+}
+export default function BuyBox(props: IProps) {
   return (
     <div className={`mr-3-l ${styles.info_section_buy_box}`}>
       <div className="radius-medium-lg border-200-lg bg-000 grow-1 ">
         <div>
-          <a
-            href="#"
-          >
+          <a href="#">
             <div
               className="w-full px-4 d-flex"
               data-cro-id="pdp-seller-info-cta"
@@ -124,81 +126,9 @@ export default function BuyBox() {
         </div>
         <div className="pos-relative w-full w-auto-lg px-4-lg pb-4-lg">
           <div className="py-3 px-5 p-0-lg pt-3-lg w-full w-auto-lg border-t-200-lg z-3 bg-000 shadow-fab-button shadow-none-lg BuyBoxFooter_buyboxFooter__actionWrapper__hIfpJ">
-            <div className="d-none-lg">
-              <div className="d-flex align-middle">
-                <div className="d-flex a-center flex-row-reverse mr-auto mb-3">
-                  <div>
-                    <div>
-                      <div className="d-flex pointer">
-                        <svg
-                          style={{
-                            width: 18,
-                            height: 18,
-                            fill: "var(--color-icon-low-emphasis)",
-                          }}
-                        >
-                          <use xlinkHref="#infoOutline" />
-                        </svg>
-                      </div>
-                    </div>            
-                  </div>
-                  <span className="text-caption color-500 ml-2">
-                    قیمت فروشنده
-                  </span>
-                </div>
-              </div>
-              <div className="d-flex ai-center mt-3-lg">
-                <div className="w-min-50 shrink-0">
-                  <button className="relative d-flex ai-center user-select-none radius-medium text-button-2 d-none-lg w-full">
-                    <div className="d-flex ai-center jc-center relative grow-1">
-                      افزودن به سبد خرید
-                    </div>
-                  </button>
-                </div>
-                <div className="d-flex flex-column ai-end jc-start mr-auto text-h4 pr-4">
-                  <div className="d-flex ai-center jc-end w-100">
-                    <span className="line-through text-body-2 ml-1 color-300">
-                      ۲۷۰,۰۰۰
-                    </span>
-                    <div className="px-1 color-white radius-large text-body2-strong d-flex ai-center jc-center ProductPrice_ProductPrice__discountWrapper__bx4mc bg-p-700 shrink-0 mr-1">
-                      <span>۱۰٪</span>
-                    </div>
-                  </div>
-                  <div className="d-flex flex-row ai-center">
-                    <span className="color-800 ml-1 text-h4">۲۴۳,۷۰۰</span>
-                    <div className="d-flex mr-1">
-                      <svg
-                        style={{
-                          width: 14,
-                          height: 14,
-                          fill: "var(--color-icon-high-emphasis)",
-                        }}
-                      >
-                        <use xlinkHref="#toman" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div className="d-none d-block-lg">
               <div className="d-flex ai-center">
                 <div className="d-flex a-center">
-                  <div>
-                    <div>
-                      <div className="d-flex pointer">
-                        <svg
-                          style={{
-                            width: 18,
-                            height: 18,
-                            fill: "var(--color-icon-low-emphasis)",
-                          }}
-                        >
-                          <use xlinkHref="#infoOutline" />
-                        </svg>
-                      </div>
-                    </div>             
-                  </div>
                   <span className="text-caption color-500 mr-2">
                     قیمت محصول
                   </span>
@@ -206,14 +136,16 @@ export default function BuyBox() {
                 <div className="d-flex flex-column ai-end jc-start mr-auto text-h3">
                   <div className="d-flex ai-center jc-end w-100">
                     <span className="line-through text-body-2 ml-1 color-300">
-                      ۲۷۰,۰۰۰
+                      {sepratorMoney(props?.price)}
                     </span>
                     <div className="px-1 color-white radius-large text-body2-strong d-flex ai-center jc-center ProductPrice_ProductPrice__discountWrapper__bx4mc bg-p-700 shrink-0 mr-1">
                       <span>۱۰٪</span>
                     </div>
                   </div>
                   <div className="d-flex flex-row ai-center">
-                    <span className="color-800 ml-1 text-h4">۲۴۳,۷۰۰</span>
+                    <span className="color-800 ml-1 text-h4">
+                      {sepratorMoney(props?.price)}
+                    </span>
                     <div className="d-flex mr-1">
                       <svg
                         style={{
@@ -231,30 +163,11 @@ export default function BuyBox() {
               <div />
               <div className="d-flex ai-center">
                 <button
-                  className="relative d-flex ai-center user-select-none Button-module_btn__daEdK text-button-2 Button-module_btn--medium__7lzYn Button-module_btn--primary__RKxUy radius-medium d-none d-flex-lg w-full"
-                  data-cro-id="pdp-add-to-cart"
-                  data-add-to-cart-variant-id={22355490}
+                  className="relative d-flex ai-center user-select-none Button-module_btn__daEdK 
+                  text-button-2 Button-module_btn--medium__7lzYn Button-module_btn--primary__RKxUy radius-medium d-none d-flex-lg w-full"
                 >
-                  <div className="d-flex ai-center jc-center Button-module_btn__loading__47UHk">
-                    <div className="rounded-circle Loading-module_Loading__circle__VPFX- Loading-module_Loading__circle--low-emphasis__BFY3N" />
-                    <div className="rounded-circle Loading-module_Loading__circle__VPFX- Loading-module_Loading__circle--low-emphasis__BFY3N" />
-                    <div className="rounded-circle Loading-module_Loading__circle__VPFX- Loading-module_Loading__circle--low-emphasis__BFY3N" />
-                  </div>
                   <div className="d-flex ai-center jc-center relative grow-1">
                     افزودن به سبد
-                  </div>
-                </button>
-                <button
-                  className="relative d-flex ai-center user-select-none Button-module_btn__daEdK text-button-2 Button-module_btn--medium__7lzYn Button-module_btn--primary__RKxUy radius-medium text-button-2 d-none-lg w-full"
-                  data-cro-id="pdp-add-to-cart"
-                >
-                  <div className="d-flex ai-center jc-center Button-module_btn__loading__47UHk">
-                    <div className="rounded-circle Loading-module_Loading__circle__VPFX- Loading-module_Loading__circle--low-emphasis__BFY3N" />
-                    <div className="rounded-circle Loading-module_Loading__circle__VPFX- Loading-module_Loading__circle--low-emphasis__BFY3N" />
-                    <div className="rounded-circle Loading-module_Loading__circle__VPFX- Loading-module_Loading__circle--low-emphasis__BFY3N" />
-                  </div>
-                  <div className="d-flex ai-center jc-center relative grow-1">
-                    افزودن به سبد خرید
                   </div>
                 </button>
               </div>
@@ -262,12 +175,6 @@ export default function BuyBox() {
           </div>
         </div>
       </div>
-      <a
-        className="Link-module_Link__9P9LC"
-        data-cro-id="pdp-how-pricing"
-        href="#"
-        dideo-checked="true"
-      ></a>
     </div>
   );
 }

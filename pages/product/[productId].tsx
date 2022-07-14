@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "./index.module.css";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -12,8 +12,18 @@ import ProductViewer from "./components/productViewer/ProductViewer";
 import BuyBox from "./components/BuyBox/BuyBox";
 import SimilarProduct from "../../components/common/sliders/SimilarProducts/SimilarProduct";
 import BuyBoxDetail from "./components/BuyBoxDetail/BuyBoxDetail";
+import { useRouter } from "next/router";
+import products from "../../constants/product";
 
 export default function Index() {
+  const [product, setProduct] = useState<any>({});
+  const router = useRouter();
+  const { productId } = router.query;
+  useEffect(() => {
+    var filter = products.find((a) => a.id === Number(productId));
+    setProduct(filter);
+  });
+
   return (
     <>
       <Head>
@@ -89,14 +99,12 @@ export default function Index() {
         <div
           className={`d-flex flex-column flex-row-lg ${styles.product_content_info_section}`}
         >
-          <ProductViewer />
+          <ProductViewer images={product?.images} />
 
           <div className="grow-1 w-min-0">
             <div className="d-flex ai-center w-full px-5 px-0-lg">
               <div>
-                <h1 className="text-h4 color-900 mb-2">
-                  ماشین اصلاح کیمی مدل KM-5017
-                </h1>
+                <h1 className="text-h4 color-900 mb-2">{product?.name}</h1>
               </div>
             </div>
             <div className={styles.product_content_info_section_left}>
@@ -182,11 +190,13 @@ export default function Index() {
                 </div>
               </div>
 
-              <BuyBox />
+              <BuyBox price={product?.price}/>
             </div>
           </div>
         </div>
-        <BuyBoxDetail />
+
+        <BuyBoxDetail introduce={product?.introduce} />
+
         <SimilarProduct />
       </div>
     </>
