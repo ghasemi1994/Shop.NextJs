@@ -3,8 +3,7 @@ export const categories = [
     {
         id: 1,
         title: 'لوازم آرايشی',
-        children: [
-            {
+        children: [{
                 parentId: 1,
                 id: 1,
                 title: 'آرایش چشم و ابرو'
@@ -30,8 +29,7 @@ export const categories = [
     {
         id: 2,
         title: 'لوازم بهداشتی',
-        children: [
-            {
+        children: [{
                 parentId: 2,
                 id: 1,
                 title: 'کرم و مراقبت پوست'
@@ -61,8 +59,7 @@ export const categories = [
     {
         id: 3,
         title: 'عطر، ادکلن، اسپری و ست',
-        children: [
-            {
+        children: [{
                 parentId: 3,
                 id: 1,
                 title: 'مردانه'
@@ -88,8 +85,7 @@ export const categories = [
     {
         id: 4,
         title: 'لوازم شخصی برقی',
-        children: [
-            {
+        children: [{
                 parentId: 4,
                 id: 1,
                 title: 'سشوار'
@@ -107,30 +103,14 @@ export const categories = [
             {
                 parentId: 4,
                 id: 4,
-                title: 'اتو مو و حالت دهنده'
-            }
-            ,
+                title: 'بیگودی و فرکننده'
+            },
             {
                 parentId: 4,
-                id: 4,
-                title: 'اتو مو و حالت دهنده'
-            }
-            ,
-            {
-                parentId: 4,
-                id: 4,
-                title: 'اتو مو و حالت دهنده'
-            }
-            ,
-            {
-                parentId: 4,
-                id: 4,
-                title: 'اتو مو و حالت دهنده'
-            }
-
+                id: 5,
+                title: 'اصلاح بدن آقایان'
+            },
         ]
     },
 
 ];
-
-

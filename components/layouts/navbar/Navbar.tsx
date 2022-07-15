@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { useOnclickOutside } from "../../hooks/useOnClickOutside";
+import { useOnclickOutside } from "../../../hooks/useOnClickOutside";
 import styles from "./Navbar.module.css";
-import { useDispatch, useSelector } from "../../store/store";
-import { setShow, getShowState } from "../../store/slices/menuSlice";
+import { useDispatch, useSelector } from "../../../store/store";
+import { setShow, getShowState } from "../../../store/slices/menuSlice";
 import Link from "next/link";
-import { categories } from "../../constants/category";
+import { categories } from "../../../constants/category";
 interface IProps {
   className?: string;
 }
@@ -120,9 +120,9 @@ export default function Navbar(props: IProps) {
                 دسته بندی <MdKeyboardArrowDown />
               </a>
               <div className="menu-subs menu-mega menu-column-4">
-                <div className="list-item d-flex flex-column">
+                <div className="list-item d-grid gap-4" style={{gridTemplateColumns:"140px 140px"}}>
                   {categories?.map((item, index) => (
-                    <div className="d-flex flex-column mb-2" key={item.id}>
+                    <div className="" key={item.id}>
                       <h3 className="title">{item.title}</h3>
                       <ul>
                         {item?.children?.map((sub, idx) => (

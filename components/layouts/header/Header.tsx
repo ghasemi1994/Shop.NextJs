@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./Header.module.css";
-import Navbar from "./Navbar";
-import TopHeader from "./TopHeader";
+import Navbar from "../navbar/Navbar";
+import TopHeader from "../topHeader/TopHeader";
 
 export default function Header() {
   return (

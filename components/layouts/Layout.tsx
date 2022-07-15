@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import styles from "./Layout.module.css";
-import Footer from "./Footer";
-import Header from "./Header";
+import Footer from "./footer/Footer";
+import Header from "./header/Header";
 
 interface PropType {
   children: ReactNode;

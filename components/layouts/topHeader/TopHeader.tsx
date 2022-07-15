@@ -2,8 +2,8 @@ import React from "react";
 import { BsCart4, BsSearch } from "react-icons/bs";
 import { HiOutlineLogin } from "react-icons/hi";
 import styles from "./TopHeader.module.css";
-import { useDispatch, useSelector } from "../../store/store";
-import { setShow, getShowState } from "../../store/slices/menuSlice";
+import { useDispatch, useSelector } from "../../../store/store";
+import { setShow, getShowState } from "../../../store/slices/menuSlice";
 export default function TopHeader() {
   const { show } = useSelector(getShowState);
   const dispatch = useDispatch(); 

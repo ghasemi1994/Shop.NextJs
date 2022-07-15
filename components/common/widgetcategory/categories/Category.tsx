@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Category.module.css";
-import { categories } from "../../../constants/category";
+import { categories } from "../../../../constants/category";
 
 interface IProps {
   classNameName?: string;

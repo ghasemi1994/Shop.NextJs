@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Swipper from "../components/common/sliders/Swipper";
+import Swipper from "../components/common/sliders/main/Swipper";
 import Image from "next/image";
-import Category from "../components/common/widgetcategory/Category";
-import PupolarBrands from "../components/common/brands/PupolarBrands";
-import SuggestionSlider from "../components/common/sliders/SuggestionSlider";
-import CategorySuggestion from "../components/common/widgetcategory/CategorySuggestion";
-import BestProduct from "../components/common/sliders/best-product/BestProduct";
+import Category from "../components/common/widgetcategory/categories/Category";
+import PupolarBrands from "../components/common/sliders/brands/PupolarBrands";
+import SuggestionSlider from "../components/common/sliders/suggestionSpecialProduct/SuggestionSlider";
+import CategorySuggestion from "../components/common/widgetcategory/suggestionCategoris/CategorySuggestion";
+import BestProduct from "../components/common/sliders/bestSellingProduct/BestProduct";
 import VisitProduct from "../components/common/widgetcategory/visitProduct/VisitProduct";
 import ServiceMain from "../components/common/widget/services/ServiceMain";
 
